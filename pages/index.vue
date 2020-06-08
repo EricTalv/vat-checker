@@ -1,72 +1,124 @@
 <template>
+    <!--
+      
+      TO DO 
+
+        [*] Input for VAT- ID 
+        [*] Input for Country
+        [*] Country Code 
+
+        [*] Front-end initial styles V1
+
+        [ ] Send VAT-ID request to endpoint
+        [ ] Retrieve Data 
+        [ ] Display retrieved data
+        [ ] Populate Country list
+    
+    -->
+
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        vat-checker
-      </h1>
-      <h2 class="subtitle">
-        
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
+
+    <div class="row align-middle h-100">
+
+      <b-form @submit="onSubmit" @reset="onReset" >
+
+        <b-form-group
+          label="VAT Identifier"
+          class="border p-4 vat-id-container"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+
+          <!-- VAT ID -->
+          <b-form-group label="VAT code">
+            <b-form-input
+              id="vat-code-input"
+              type="text"         
+              v-model="form.vatCode"
+            ></b-form-input>
+          </b-form-group>
+
+          <!-- VAT Country -->
+          <b-form-group label="VAT Country">
+            <b-form-select
+              id="vat-country-input"
+              v-model="form.country"
+              :options="[{ text: 'Choose...', value: null }, 'One', 'Two', 'Three']"
+            ></b-form-select>
+          </b-form-group>
+
+          <!-- Submit -->
+          <b-button block squared variant="primary" type="submit">Validate</b-button>
+
+
+        </b-form-group>
+
+
+      </b-form>
+
+
     </div>
+
   </div>
+
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
+  export default {
+    data() {
+      return {
+        form: {
+          vatCode: '',
+          country: ''
+        }
+      }
+    },
+
+    methods: {
+        onSubmit(evt) {
+          evt.preventDefault()
+          alert(JSON.stringify(this.form))
+        },
+
+
+        onReset(evt) {
+          evt.preventDefault()
+          this.form.vatCode = ''
+          this.form.country = ''
+        }
+    }
+
   }
-}
+
+
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container { 
+  height: 90vh;
+  font-family: Consolas, sans-serif;
+}
+
+.row {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.vat-id-container > legend {
+  width: auto; 
+  padding: 0 20px; 
+  border-bottom: none;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.vat-id-container > label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>
