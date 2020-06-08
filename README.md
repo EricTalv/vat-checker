@@ -1,6 +1,23 @@
 # vat-checker
 
-> 
+### MVP TO:DO 
+
+I usually start my work by setting up 
+a simple MVP TO-DO List.
+
+Later I might add stretch goals. 
+
+[ ] Setup Environment
+[ ] Simple Front-End
+[ ] Send succesful request to Endpoint
+ [ ] Return Data 
+ [ ] Validate Data
+[ ] Front-end additions
+ [ ] Country drop-down component
+ 
+
+
+
 
 ## Build Setup
 
