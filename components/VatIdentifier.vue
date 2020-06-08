@@ -63,7 +63,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
     name: "VatIdentifier",
     data() {

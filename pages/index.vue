@@ -30,18 +30,19 @@
 
   <div class="container">
 
-    <hello/>
+    <vat-identifier />
 
   </div>
 
 </template>
 
 <script>
-import Hello from "~/components/Hello.vue"
+import VatIdentifier from "~/components/VatIdentifier.vue"
 
   export default {
-    components: 
-      Hello
+    components: {
+      VatIdentifier
+    }
   }
 
 </script>
