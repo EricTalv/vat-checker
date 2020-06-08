@@ -15,7 +15,14 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "https://cdn.jsdelivr.net/npm/animate.css@3.5.1"
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -39,15 +46,13 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     "bootstrap-vue/nuxt",
-    "@nuxtjs/axios",
+    "@nuxtjs/axios"
   ],
 
   /*
-  ** Axios 
+   ** Axios
    */
-  axios: {
-
-  },
+  axios: {},
 
   /*
    ** Build configuration
