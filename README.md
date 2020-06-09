@@ -59,6 +59,15 @@ Here is my MVP Todo list:
 [X] Error Handeling
 [X] Documentation
 
+[ ] Fix CSS bugs
+
+-Stretch Goals
+
+[ ] Make phone compatible
+[ ] Turn into PWA
+[ ] Write some Tests 
+[ ] Add External Country-list source
+
 ```
  
 ## Components Architecture
