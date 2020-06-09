@@ -102,10 +102,10 @@ export default {
             
               // Request Alert Parameters if SUCCESS
               this.successStatus = 'success' 
-              this.requestMessage = 'Request was succesfull!'
+              this.requestMessage = 'Request was Successful!'
               this.alertShow = true;
 
-              console.log()
+              console.log(response)
 
               // Send data to parent
               this.$emit('setVatData', response.data)
@@ -113,15 +113,15 @@ export default {
               // set loading to false
               this.isRetrieving = false
             }) 
-            .catch(response => {
+            .catch(error => {
               
               // Request Alert Parameters if ERROR
               this.successStatus = 'danger' 
-              this.requestMessage = 'Request was Unsuccesfull :C'
+              this.requestMessage = `Request was Unsuccessful -> (${error.response.status}) ${error.response.data.error}`
               this.alertShow = true;
 
               // Resets data, delete this if you want to keep previous data
-              this.$emit('setVatData', response.data)
+              this.$emit('setVatData', error.data)
 
               // set loading to false
               this.isRetrieving = false
