@@ -4,29 +4,30 @@
 ## Build Locally 
 
 ```bash
-# install dependencies
+# Clone repo
+$ git clone https://github.com/EricTalv/vat-checker.git
+
+# Install dependencies
 $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
 
+-------
 
+# Documentation 
 
-### MVP TO:DO 
+This is a VAT-ID Identification application ursing ERPLY's API's.
+
+Underneath you'll find all my documentation regarding the app.
+
+## MVP TO:DO 
 
 I usually start my work by setting up 
-a simple MVP TO-DO List.
-
-Later I might add stretch goals. 
+a simple MVP TO-DO List. 
 
 ```
 [X] Setup Environment
@@ -37,7 +38,7 @@ Later I might add stretch goals.
  [X] Validate Data (Meaning organize the data)
 
 [ ] Front-end additions
- [ ] Country drop-down component
+ [X] Country drop-down component
  [X] Loading animation
 
 [X] Simple animations
@@ -55,32 +56,47 @@ Later I might add stretch goals.
         [X] Display countries in drop-down menu
         [X] Make country value Short
     [X] Vat Compiler
+
+[X] Error Handeling
+[ ] Documentation
+
 ```
  
-### Components 
+## Components 
 
 To make the code re-usable and organized, I have divided
 the main logic into components.
 
 This would allow us to use the component in future applications. 
 
+#### Vat-Compiler
+
+To pass data between components I need a Parent component to
+pass on certain data pieceses.
+
+Vat-Compiler acts as the middle-man between the Vat-identifier and Data Organizer.
+
 #### Vat-Identifier
 
 This is the primary logic component that retrieves
 data from the given URL.
 
-Here we send the request to the API and return the data we get.
+Here I send the request to the API and return the data I get.
 
 #### Data-Organizer 
 
-Here we get data and organize it however we want and display the data.
+Here I get data and organize it however I want and display the data.
 
 #### Country-dropdown 
 
-Here we just get all countries and put them into a drop-down 
-element.
-I made this into a component so I can manipulate how many
-countries are added and so on.
+Here I create my custon country-dropdown component.
+
+I made this into a component so I can manipulate set the countries
+I need and additionally separate countryCode from countryName
+
+I didn't know how many countries would be needed for this project,
+Ideally I would have a *country-data file* and serve that to this
+component. 
 
 ## Errors
 
@@ -93,6 +109,6 @@ for example:
 
 Chrome will always console.log an error.
 
-[see this post](https://github.com/axios/axios/issues/1947)
+[see this post for more information](https://github.com/axios/axios/issues/1947)
 
 
