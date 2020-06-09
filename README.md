@@ -26,8 +26,7 @@ Underneath you'll find all my documentation regarding the app.
 
 ## MVP TO:DO 
 
-I usually start my work by setting up 
-a simple MVP TO-DO List. 
+Here is my MVP Todo list: 
 
 ```
 [X] Setup Environment
@@ -58,11 +57,11 @@ a simple MVP TO-DO List.
     [X] Vat Compiler
 
 [X] Error Handeling
-[ ] Documentation
+[X] Documentation
 
 ```
  
-## Components 
+## Components Architecture
 
 To make the code re-usable and organized, I have divided
 the main logic into components.
@@ -107,7 +106,7 @@ for example:
 >  RU999999
 >
 
-Chrome will always console.log an error.
+Chrome will always show an error in the console.
 
 [see this post for more information](https://github.com/axios/axios/issues/1947)
 
