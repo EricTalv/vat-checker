@@ -37,7 +37,7 @@ a simple MVP TO-DO List.
  [X] Return Data 
  [X] Validate Data (Meaning organize the data)
 
-[ ] Front-end additions
+[X] Front-end additions
  [X] Country drop-down component
  [X] Loading animation
 

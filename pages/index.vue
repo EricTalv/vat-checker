@@ -20,12 +20,16 @@
 
         [*] Implement Loading animation on validate
 
-        [ ] Turn everything into a component
+        [*] Turn everything into a component
          [*] Vat identifier Component
          [ ] City Population component
          [*] Data-organizer component
 
-        [ ] Populate Country list
+        [*] Populate Country list
+
+        [ ] Error handling
+
+        [ ] Fix-up Documentation
     
     -->
 

@@ -23,11 +23,6 @@ export default {
     props: { 
         parentItems: Array,
 
-    },
-    data() {
-        return {
-           
-        }
     }
 }
 

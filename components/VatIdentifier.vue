@@ -93,11 +93,10 @@ export default {
           // Set loading animation
           this.isRetrieving = true
 
-          // Emtpy Alert
+          // Empty Alert
           this.alertShow = false
           this.successStatus = null
           this.requestMessage = ''
-
 
           // Using Axios to handle requests
           this.$axios
