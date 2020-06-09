@@ -9,7 +9,6 @@
                 >
 
                     <b-table stacked :items="parentItems"></b-table>
-
                 </b-form-group>  
                 </b-col>
             </div>              

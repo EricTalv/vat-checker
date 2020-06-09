@@ -23,8 +23,6 @@ export default {
            this.$emit("selected", value.countryCode)
         }
     }
-
-  
 }
 
 </script>

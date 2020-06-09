@@ -2,10 +2,10 @@
   <div class="vat-id-wrapper">
 
     <!-- VAT IDENTIFIER -->
+    <!-- API handeling is here -->
     <VatIdentifier @setVatData="setVatData($event)" />
 
     <!-- VAT Data organizer -->
-    <!-- Pass data to Data-Organizer component -->
     <!-- Show this only when data exists -->
     <VatDataOrganizer v-bind:parentItems="[VatData]" v-if="VatData"/>
 
@@ -34,9 +34,7 @@ export default {
       setVatData (data) {
         this.VatData = data
       }
-    }
-  
-    
+    }  
 }
 </script>
 

@@ -45,12 +45,7 @@
               <b-alert  v-model="alertShow"  :variant="successStatus" dismissible>
                 {{ requestMessage }}
               </b-alert> 
-
-              
-          
             </div>
-
-
         </div>
     </div>
 </template>
@@ -65,8 +60,8 @@ export default {
      data() {
       return {
         form: {
-          VATNumber: '100247019',
-          country: 'EE'
+          VATNumber: '',
+          country: ''
         },
 
         alertShow: false,
@@ -130,13 +125,9 @@ export default {
 
               // set loading to false
               this.isRetrieving = false
-
             })
-         
-        
         },
     }
-  
 }
 
 </script>
