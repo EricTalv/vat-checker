@@ -1,10 +1,8 @@
 <template>
     <v-select 
-        
         @input="setSelected" 
         label="countryName" 
         :options="countries"
-
     >
         <template
             #search="{attributes, events}"
