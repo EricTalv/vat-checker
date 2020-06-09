@@ -20,7 +20,7 @@ $ npm run dev
 
 # Documentation 
 
-This is a VAT-ID Identification application ursing ERPLY's API's.
+This is a VAT-ID Identification application using ERPLY's API's.
 
 Underneath you'll find all my documentation regarding the app.
 
