@@ -1,5 +1,26 @@
 # vat-checker
 
+
+## Build Locally 
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+
+
+
 ### MVP TO:DO 
 
 I usually start my work by setting up 
@@ -61,23 +82,17 @@ element.
 I made this into a component so I can manipulate how many
 countries are added and so on.
 
+## Errors
 
-## Build Setup
+On google chrome if you were to send a bad request to the API link 
+for example:
 
-```bash
-# install dependencies
-$ npm install
+> 
+>  RU999999
+>
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+Chrome will always console.log an error.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+[see this post](https://github.com/axios/axios/issues/1947)
 
-# generate static project
-$ npm run generate
-```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-"# vat-checker" 

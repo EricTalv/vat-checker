@@ -13,7 +13,6 @@ export default {
                 { countryCode: 'EE', countryName: 'Estonia' },
                 { countryCode: 'RU', countryName: 'Russia' },
                 { countryCode: 'BG', countryName: 'Bulgaria' }
-
             ]
         }
     },

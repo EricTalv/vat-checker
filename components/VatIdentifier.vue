@@ -41,6 +41,16 @@
             <b-spinner style="width: 3rem; height: 3rem;" variant="primary" type="grow" label="Spinning"></b-spinner>
             </div>
 
+            <div class="row" v-if="successStatus">
+              <b-alert  v-model="alertShow"  :variant="successStatus" dismissible>
+                {{ requestMessage }}
+              </b-alert> 
+
+              
+          
+            </div>
+
+
         </div>
     </div>
 </template>
@@ -59,12 +69,20 @@ export default {
           country: 'EE'
         },
 
+        alertShow: false,
+        successStatus: null,
+        requestMessage: '',
+
         VatData: null,
         isRetrieving: false,
       }
     },
 
     methods: {
+
+
+        // This gets the country from my CountryDropdown component
+        // and passes it here (parent) into the form
         getCountry(country) {
             this.form.country = country
         },
@@ -75,6 +93,12 @@ export default {
           // Set loading animation
           this.isRetrieving = true
 
+          // Emtpy Alert
+          this.alertShow = false
+          this.successStatus = null
+          this.requestMessage = ''
+
+
           // Using Axios to handle requests
           this.$axios
             // Send request to url
@@ -82,12 +106,33 @@ export default {
             // How we handle the response
             .then((response) => {
             
+              // Request Alert Parameters if SUCCESS
+              this.successStatus = 'success' 
+              this.requestMessage = 'Request was succesfull!'
+              this.alertShow = true;
+
+              console.log()
+
               // Send data to parent
               this.$emit('setVatData', response.data)
 
               // set loading to false
               this.isRetrieving = false
             }) 
+            .catch(response => {
+              
+              // Request Alert Parameters if ERROR
+              this.successStatus = 'danger' 
+              this.requestMessage = 'Request was Unsuccesfull :C'
+              this.alertShow = true;
+
+              // Resets data, delete this if you want to keep previous data
+              this.$emit('setVatData', response.data)
+
+              // set loading to false
+              this.isRetrieving = false
+
+            })
          
         
         },
