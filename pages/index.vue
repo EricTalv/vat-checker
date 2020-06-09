@@ -27,10 +27,11 @@
 
         [*] Populate Country list
 
-        [ ] Error handling
+        [*] Error handling
 
-        [ ] Fix-up Documentation
-    
+        [*] Fix-up Documentation
+
+        [ ] Setup netlify
     -->
 
   <div class="container">
