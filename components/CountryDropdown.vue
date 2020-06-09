@@ -1,5 +1,22 @@
 <template>
-    <v-select :value="selected.countryName" @input="setSelected" label="countryName" :options="countries" />
+    <v-select 
+        
+        @input="setSelected" 
+        label="countryName" 
+        :options="countries"
+
+    >
+        <template
+            #search="{attributes, events}"
+        >
+            <input
+                class="vs__search"            
+                :required="!selected"
+                v-bind="attributes"
+                v-on="events"
+            />
+        </template>
+    </v-select>
 </template>
 
 <script>
