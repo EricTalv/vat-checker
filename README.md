@@ -7,6 +7,7 @@ a simple MVP TO-DO List.
 
 Later I might add stretch goals. 
 
+```
 [X] Setup Environment
 
 [X] Simple Front-End
@@ -18,21 +19,22 @@ Later I might add stretch goals.
  [ ] Country drop-down component
  [X] Loading animation
 
-[ ] Simple animations
+[X] Simple animations
 
-[ ] Components
-    [ ] Vat-Identifier
-        [ ] Retrieve data
-        [ ] Add data to prop
-    [ ] Data-Organizer
-        [ ] Retrieve Data
-        [ ] Organize Data
-        [ ] Display Data
-    [ ] Country drop-down component
-        [ ] Create a country Array 
-        [ ] Display countries in drop-down menu
-        [ ] Make country value Short
-
+[X] Components
+    [X] Vat-Identifier
+        [X] Retrieve data
+        [X] Add data to prop
+    [X] Data-Organizer
+        [X] Retrieve Data
+        [X] Organize Data
+        [X] Display Data
+    [X] Country drop-down component
+        [X] Create a country Array 
+        [X] Display countries in drop-down menu
+        [X] Make country value Short
+    [X] Vat Compiler
+```
  
 ### Components 
 
