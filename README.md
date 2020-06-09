@@ -18,7 +18,7 @@ Later I might add stretch goals.
  [ ] Country drop-down component
  [X] Loading animation
 
- [ ] Simple animations
+[ ] Simple animations
 
 [ ] Components
     [ ] Vat-Identifier

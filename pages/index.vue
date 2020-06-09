@@ -21,8 +21,9 @@
         [*] Implement Loading animation on validate
 
         [ ] Turn everything into a component
-         [ ] Vat identifier Component
+         [*] Vat identifier Component
          [ ] City Population component
+         [*] Data-organizer component
 
         [ ] Populate Country list
     
@@ -30,18 +31,18 @@
 
   <div class="container">
 
-    <vat-identifier />
+    <vat-compiler/>
 
   </div>
 
 </template>
 
 <script>
-import VatIdentifier from "~/components/VatIdentifier.vue"
+import VatCompiler from "~/components/VatCompiler.vue"
 
   export default {
     components: {
-      VatIdentifier
+      VatCompiler
     }
   }
 
