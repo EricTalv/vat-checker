@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -16,16 +17,19 @@ html, body {
   font-size: 20px;
 }
 
-.row {
+.vat-comp-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column;
 }
 
 .vat-id-container, .vat-returned-container {
   border-radius: 10px;
   box-shadow: 0px 18px 42px -24px rgba(0,0,0,0.42);
-}
+
+  background-color: #fff;
+} 
 
 .vat-id-container > legend, .vat-returned-container > legend {
   width: auto; 

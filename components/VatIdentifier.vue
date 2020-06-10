@@ -1,5 +1,5 @@
 <template>
-    <div class="vat-id-wrapper">
+    <div class="vat-id-wrapper w-100">
 
         <div class="row my-5">
 

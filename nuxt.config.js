@@ -24,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [ "@/assets/css/main.css" ],
+  css: ["@/assets/css/main.css"],
   /*
    ** Plugins to load before mounting the App
    */
@@ -40,9 +40,17 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     "bootstrap-vue/nuxt",
     "@nuxtjs/axios",
-    "nuxt-vue-select"
+    "nuxt-vue-select",
+    "@nuxtjs/pwa"
   ],
-
+  /* Generate Icons */
+  icon: {
+    iconSrc: './static/icon.png',
+  },
+  /* PWA Manifest */
+  mainfest: {
+    
+  },
   /*
    ** Axios
    */

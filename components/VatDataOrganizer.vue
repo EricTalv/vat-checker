@@ -1,7 +1,7 @@
 <template>
      <transition name="fade">
-         <div class="vat-returned-wrapper">
-            <div class="row mx-auto">
+         <div class="vat-returned-wrapper w-100">
+            <div class="row ">
                 <b-col>
                 <b-form-group
                     label="Result"
