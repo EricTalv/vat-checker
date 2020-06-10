@@ -2,6 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
 
+ background: rgb(255,255,255);
+ background: linear-gradient(180deg, rgba(255,255,255,1) 17%, rgba(236,236,236,1) 100%);
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -12,12 +14,12 @@ html, body {
 }
 
 .container { 
-  height: 90vh;
+  height: 100vh;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
 }
 
-.vat-comp-wrapper {
+.vat-comp-wrapper, .row {
   display: flex;
   align-items: center;
   justify-content: center;
