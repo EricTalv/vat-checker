@@ -105,6 +105,11 @@ I didn't know how many countries would be needed for this project,
 Ideally I would have a *country-data file* and serve that to this
 component. 
 
+#### Countries.json
+
+To add or edit any country-codes or labels you'll have to dive
+into `./json/countries.json`, here are all the country objects stored.
+
 ## Errors
 
 On google chrome if you were to send a bad request to the API link 
