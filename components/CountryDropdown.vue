@@ -18,17 +18,16 @@
 </template>
 
 <script>
+import countryData from '~/json/countries.json'
 
 export default {
     data() {
         return {
             selected: '',
 
-            countries: [
-                { countryCode: 'EE', countryName: 'Estonia' },
-                { countryCode: 'RU', countryName: 'Russia' },
-                { countryCode: 'BG', countryName: 'Bulgaria' }
-            ]
+
+
+            countries: countryData,
         }
     },
 

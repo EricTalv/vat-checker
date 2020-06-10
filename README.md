@@ -63,7 +63,7 @@ Here is my MVP Todo list:
 
 -Stretch Goals
 
-[ ] Turn into PWA
+[X] Turn into PWA
 [ ] Write some Tests 
 [ ] Add External Country-list source
 
