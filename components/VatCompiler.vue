@@ -1,5 +1,5 @@
 <template>
-  <div class="vat-id-wrapper">
+  <div class="vat-comp-wrapper">
 
     <!-- VAT IDENTIFIER -->
     <!-- API handeling is here -->

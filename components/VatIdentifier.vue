@@ -42,7 +42,12 @@
             </div>
 
             <div class="row" v-if="successStatus">
-              <b-alert  v-model="alertShow"  :variant="successStatus" dismissible>
+              <b-alert 
+                v-model="alertShow"
+                @dismissed="dismissCountDown=0" 
+                :variant="successStatus" 
+                dismissible
+              >
                 {{ requestMessage }}
               </b-alert> 
             </div>
