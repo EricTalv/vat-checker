@@ -65,7 +65,7 @@ Here is my MVP Todo list:
 
 [X] Turn into PWA
 [ ] Write some Tests 
-[ ] Add External Country-list source
+[X] Add External Country-list source
 
 ```
  
