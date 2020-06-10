@@ -45,11 +45,16 @@ export default {
   ],
   /* Generate Icons */
   icon: {
-    iconSrc: './static/icon.png',
+    iconSrc: "./static/icon.png",
   },
   /* PWA Manifest */
-  mainfest: {
-    
+  manifest: {
+    short_name: "EricTalv",
+    name: "Eric Talviste",
+    description: "Eric Talvistes Test Task",
+    display: "standalone",
+    background_color: "#fff",
+    start_url: '/'
   },
   /*
    ** Axios
