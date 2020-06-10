@@ -64,8 +64,13 @@ Here is my MVP Todo list:
 -Stretch Goals
 
 [X] Turn into PWA
-[ ] Write some Tests 
 [X] Add External Country-list source
+
+[ ] Request history list
+[ ] Extra data
+[ ] Change time stamp on "request date"
+[ ] Add GSAP animations
+
 
 ```
  
