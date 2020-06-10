@@ -24,9 +24,7 @@ export default {
     data() {
         return {
             selected: '',
-
-
-
+            
             countries: countryData,
         }
     },
