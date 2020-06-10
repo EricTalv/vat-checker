@@ -110,8 +110,6 @@ export default {
               this.requestMessage = 'Request was Successful!'
               this.alertShow = true;
 
-              console.log(response)
-
               // Send data to parent
               this.$emit('setVatData', response.data)
 
