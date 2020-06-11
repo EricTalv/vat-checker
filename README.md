@@ -70,9 +70,20 @@ Here is my MVP Todo list:
 [ ] Extra data
 [ ] Change time stamp on "request date"
 [ ] Add GSAP animations
-
-
 ```
+
+# Testing
+
+Using this code : `EE100247019` <- will output a successful request and retriev specific data. 
+
+To create a failed request you can use `Russia` as the country-code, this will always have a bad request
+
+> note:
+>
+> Russias request fail not because of political views but rather 
+> lack of API data. 
+> 
+
  
 ## Components Architecture
 
