@@ -11,10 +11,10 @@
             >
 
                 <!-- VAT ID -->
-                <b-form-group label="VAT Number">
+                <b-form-group label="VAT Code">
                 <b-form-input
                     id="vat-number-input"
-                    type="text"         
+                    type="number"         
                     v-model="form.VATNumber"
                     size="lg"
                     required
@@ -48,7 +48,7 @@
                 :variant="successStatus" 
                 dismissible
               >
-                {{ requestMessage }}
+                <div>{{ requestMessage }}</div> 
               </b-alert> 
             </div>
         </div>
@@ -79,7 +79,6 @@ export default {
     },
 
     methods: {
-
 
         // This gets the country from my CountryDropdown component
         // and passes it here (parent) into the form
@@ -120,7 +119,7 @@ export default {
               
               // Request Alert Parameters if ERROR
               this.successStatus = 'danger' 
-              this.requestMessage = `Request was Unsuccessful -> (${error.response.status}) ${error.response.data.error}`
+              this.requestMessage = `Request Failed for -> ${this.form.country}${this.form.VATNumber} Error -> (${error.response.status}) ${error.response.data.error}`
               this.alertShow = true;
 
               // Resets data, delete this if you want to keep previous data
