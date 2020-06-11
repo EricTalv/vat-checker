@@ -81,7 +81,7 @@ To create a failed request you can use `Russia` as the country-code, this will a
 > note:
 >
 > Russias request fail not because of political views but rather 
-> lack of API data. 
+> due to lack of API data. 
 > 
 
  
