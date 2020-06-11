@@ -31,7 +31,10 @@
 
         [*] Fix-up Documentation
 
-        [ ] Setup netlify
+        [*] Setup netlify
+
+        I would usually delete this TO-DO
+        but I am leaving this in for the sake of reading. 
     -->
 
   <div class="container">
